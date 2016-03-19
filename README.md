@@ -3,7 +3,7 @@
 Projetos em andamento:
 
 * breakout ESP8266, módulo ESP-12-F da AiTinker
-* breakout ESP832, módulo usado no beta test
+* breakout ESP32, módulo usado no beta test
 * breakout regulador de tensão 3.3V
 * conversor TTL USB
 * breakout carregador de bateria íon lítio polímero
