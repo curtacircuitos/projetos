@@ -11,3 +11,4 @@ Projetos em andamento:
 
 # Referências
  * NodeMCU: https://github.com/nodemcu/nodemcu-devkit
+ * Wemos: http://www.wemos.cc/Products/d1_r2.html
