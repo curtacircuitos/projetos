@@ -8,3 +8,6 @@ Projetos em andamento:
 * breakout USB-serial
 * breakout carregador de bateria íon lítio polímero
   * http://www.microchip.com/wwwproducts/en/en024903 e https://www.maximintegrated.com/en/products/power/battery-management/MAX17044.html
+
+# Referências
+ * NodeMCU: https://github.com/nodemcu/nodemcu-devkit
