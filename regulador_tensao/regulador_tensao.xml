@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/luipillmann/GitHub/projetos/regulador_tensao/regulador_tensao.sch</source>
+    <date>2016 March 19, Saturday 17:29:41</date>
+    <tool>Eeschema 4.0.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>regulador_tensao.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>SPX3819M5-L-3-3</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="SPX3819M5-L-3-3" part="SPX3819M5-L-3-3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EDAA97</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>470pF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EDAB28</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EDABA1</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EDABC2</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_OUT_3V3</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EDB0FE</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_IN_5V</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EDB1F3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPX3819M5-L-3-3" part="SPX3819M5-L-3-3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SPX3819M5-L-3-3</field>
+        <field name="Footprint">SOT95P280X145-5N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="input"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="ADJ/BYP" type="passive"/>
+        <pin num="5" name="VOUT" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SPX3819M5-L-3-3">
+      <uri>/Users/luipillmann/GitHub/projetos/regulador_tensao/libs/SPX3819M5-L-3-3/SPX3819M5-L-3-3.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="P2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="3" name="+5V">
+      <node ref="U1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="4" name="Earth">
+      <node ref="P2" pin="2"/>
+      <node ref="P1" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="2"/>
+    </net>
+  </nets>
+</export>

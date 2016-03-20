@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SPX3819M5-L-3-3
+LIBS:regulador_tensao-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SPX3819M5-L-3-3 U1
+U 1 1 56EDAA97
+P 5700 2650
+F 0 "U1" H 5480 3041 50  0000 L CNN
+F 1 "SPX3819M5-L-3-3" H 5490 1889 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 5700 2650 50  0001 L CNN
+F 3 "" H 5700 2650 60  0000 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56EDAB28
+P 4750 3050
+F 0 "C2" H 4775 3150 50  0000 L CNN
+F 1 "470pF" H 4775 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4788 2900 50  0001 C CNN
+F 3 "" H 4750 3050 50  0000 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 56EDABA1
+P 4400 3050
+F 0 "C1" H 4425 3150 50  0000 L CNN
+F 1 "1uF" H 4425 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4438 2900 50  0001 C CNN
+F 3 "" H 4400 3050 50  0000 C CNN
+	1    4400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 56EDABC2
+P 6500 3050
+F 0 "C3" H 6525 3150 50  0000 L CNN
+F 1 "10uF" H 6525 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6538 2900 50  0001 C CNN
+F 3 "" H 6500 3050 50  0000 C CNN
+	1    6500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 56EDAD70
+P 4750 3300
+F 0 "#PWR01" H 4750 3050 50  0001 C CNN
+F 1 "Earth" H 4750 3150 50  0001 C CNN
+F 2 "" H 4750 3300 50  0000 C CNN
+F 3 "" H 4750 3300 50  0000 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 56EDAD90
+P 4400 3300
+F 0 "#PWR02" H 4400 3050 50  0001 C CNN
+F 1 "Earth" H 4400 3150 50  0001 C CNN
+F 2 "" H 4400 3300 50  0000 C CNN
+F 3 "" H 4400 3300 50  0000 C CNN
+	1    4400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR03
+U 1 1 56EDADB8
+P 5000 3300
+F 0 "#PWR03" H 5000 3050 50  0001 C CNN
+F 1 "Earth" H 5000 3150 50  0001 C CNN
+F 2 "" H 5000 3300 50  0000 C CNN
+F 3 "" H 5000 3300 50  0000 C CNN
+	1    5000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR04
+U 1 1 56EDADF0
+P 6500 2250
+F 0 "#PWR04" H 6500 2100 50  0001 C CNN
+F 1 "+3V3" H 6500 2390 50  0000 C CNN
+F 2 "" H 6500 2250 50  0000 C CNN
+F 3 "" H 6500 2250 50  0000 C CNN
+	1    6500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 56EDAE10
+P 4400 2250
+F 0 "#PWR05" H 4400 2100 50  0001 C CNN
+F 1 "+5V" H 4400 2390 50  0000 C CNN
+F 2 "" H 4400 2250 50  0000 C CNN
+F 3 "" H 4400 2250 50  0000 C CNN
+	1    4400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 56EDAEB7
+P 6500 3300
+F 0 "#PWR06" H 6500 3050 50  0001 C CNN
+F 1 "Earth" H 6500 3150 50  0001 C CNN
+F 2 "" H 6500 3300 50  0000 C CNN
+F 3 "" H 6500 3300 50  0000 C CNN
+	1    6500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 56EDB2BD
+P 6700 2500
+F 0 "#PWR07" H 6700 2250 50  0001 C CNN
+F 1 "Earth" H 6700 2350 50  0001 C CNN
+F 2 "" H 6700 2500 50  0000 C CNN
+F 3 "" H 6700 2500 50  0000 C CNN
+	1    6700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2250 4400 2900
+Wire Wire Line
+	4400 2550 5000 2550
+Connection ~ 4400 2550
+Wire Wire Line
+	5000 2750 4400 2750
+Connection ~ 4400 2750
+Wire Wire Line
+	4750 2900 4750 2850
+Wire Wire Line
+	4750 2850 5000 2850
+Wire Wire Line
+	4400 3200 4400 3300
+Wire Wire Line
+	4750 3200 4750 3300
+Wire Wire Line
+	5000 3050 5000 3300
+Wire Wire Line
+	6500 2550 6400 2550
+Wire Wire Line
+	6500 2250 6500 2900
+Connection ~ 6500 2550
+Wire Wire Line
+	6500 3200 6500 3300
+Wire Wire Line
+	6900 2300 6500 2300
+Connection ~ 6500 2300
+Wire Wire Line
+	4050 2300 4400 2300
+Connection ~ 4400 2300
+Wire Wire Line
+	6700 2400 6900 2400
+Wire Wire Line
+	4050 2400 4200 2400
+$Comp
+L CONN_01X04 P1
+U 1 1 56EEB850
+P 3850 2350
+F 0 "P1" H 3850 2600 50  0000 C CNN
+F 1 "CONN_IN_5V" V 3950 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3850 2350 50  0001 C CNN
+F 3 "" H 3850 2350 50  0000 C CNN
+	1    3850 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 56EEB8DE
+P 7100 2350
+F 0 "P2" H 7100 2600 50  0000 C CNN
+F 1 "CONN_OUT_3V3" V 7200 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7100 2350 50  0001 C CNN
+F 3 "" H 7100 2350 50  0000 C CNN
+	1    7100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR08
+U 1 1 56EDB2A0
+P 4200 2500
+F 0 "#PWR08" H 4200 2250 50  0001 C CNN
+F 1 "Earth" H 4200 2350 50  0001 C CNN
+F 2 "" H 4200 2500 50  0000 C CNN
+F 3 "" H 4200 2500 50  0000 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2400 4200 2500
+Wire Wire Line
+	6700 2500 6700 2400
+$EndSCHEMATC
