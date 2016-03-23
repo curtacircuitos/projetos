@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name CH340G)(type Legacy)(uri "$(KIPRJMOD)/libs/CH340G/CH340G.mod")(options "")(descr ""))
+  (lib (name SOT-23_S8050)(type KiCad)(uri "$(KIPRJMOD)/SOT-23_S8050.pretty")(options "")(descr ""))
 )
