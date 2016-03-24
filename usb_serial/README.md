@@ -8,7 +8,7 @@ Done:
 * Corrigir erros de pin assignment de alguns footprints (e.g. SOT-23 dos transistores) --> Como fazer no KiCad?
 	* Edit footprint, clicar nos pads e alterar os números. Salvar em uma nova lib, importá-la no sch e reassign
 * Layout v0
+* Layout da placa com furos para montagem e silkscreen.
 
 To do:
-* Importante: confirmar footprints a serem usados (componentes comerciais mais viáveis);
-* Layout da placa, revisar e otimizar.
+* Importante: confirmar footprints a serem usados (componentes comerciais mais viáveis).
