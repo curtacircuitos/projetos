@@ -165,41 +165,6 @@ F 3 "" H 6700 2500 50  0000 C CNN
 	1    6700 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 2250 4400 2900
-Wire Wire Line
-	4400 2550 5000 2550
-Connection ~ 4400 2550
-Wire Wire Line
-	5000 2750 4400 2750
-Connection ~ 4400 2750
-Wire Wire Line
-	4750 2900 4750 2850
-Wire Wire Line
-	4750 2850 5000 2850
-Wire Wire Line
-	4400 3200 4400 3300
-Wire Wire Line
-	4750 3200 4750 3300
-Wire Wire Line
-	5000 3050 5000 3300
-Wire Wire Line
-	6500 2550 6400 2550
-Wire Wire Line
-	6500 2250 6500 2900
-Connection ~ 6500 2550
-Wire Wire Line
-	6500 3200 6500 3300
-Wire Wire Line
-	6900 2300 6500 2300
-Connection ~ 6500 2300
-Wire Wire Line
-	4050 2300 4400 2300
-Connection ~ 4400 2300
-Wire Wire Line
-	6700 2400 6900 2400
-Wire Wire Line
-	4050 2400 4200 2400
 $Comp
 L CONN_01X04 P1
 U 1 1 56EEB850
@@ -234,7 +199,40 @@ F 3 "" H 4200 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 2400 4200 2500
+	4400 2250 4400 2900
 Wire Wire Line
-	6700 2500 6700 2400
+	4400 2550 5000 2550
+Connection ~ 4400 2550
+Wire Wire Line
+	5000 2750 4400 2750
+Connection ~ 4400 2750
+Wire Wire Line
+	4750 2900 4750 2850
+Wire Wire Line
+	4750 2850 5000 2850
+Wire Wire Line
+	4400 3200 4400 3300
+Wire Wire Line
+	4750 3200 4750 3300
+Wire Wire Line
+	5000 3050 5000 3300
+Wire Wire Line
+	6500 2550 6400 2550
+Wire Wire Line
+	6500 2250 6500 2900
+Connection ~ 6500 2550
+Wire Wire Line
+	6500 3200 6500 3300
+Wire Wire Line
+	4050 2300 4400 2300
+Connection ~ 4400 2300
+Wire Wire Line
+	4200 2500 4200 2200
+Wire Wire Line
+	4200 2200 4050 2200
+Wire Wire Line
+	6700 2500 6900 2500
+Wire Wire Line
+	6900 2400 6500 2400
+Connection ~ 6500 2400
 $EndSCHEMATC
