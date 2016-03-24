@@ -400,34 +400,22 @@ $EndComp
 $Comp
 L Earth #PWR09
 U 1 1 56EF1D52
-P 6150 4200
-F 0 "#PWR09" H 6150 3950 50  0001 C CNN
-F 1 "Earth" H 6150 4050 50  0001 C CNN
-F 2 "" H 6150 4200 50  0000 C CNN
-F 3 "" H 6150 4200 50  0000 C CNN
-	1    6150 4200
+P 5850 3950
+F 0 "#PWR09" H 5850 3700 50  0001 C CNN
+F 1 "Earth" H 5850 3800 50  0001 C CNN
+F 2 "" H 5850 3950 50  0000 C CNN
+F 3 "" H 5850 3950 50  0000 C CNN
+	1    5850 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 6000 3950 0    60   Input ~ 0
+Text GLabel 6150 4050 0    60   Input ~ 0
 TX
-Text GLabel 6000 4100 0    60   Input ~ 0
+Text GLabel 6150 4200 0    60   Input ~ 0
 RX
 Wire Wire Line
 	6150 3800 6150 3850
 Wire Wire Line
 	6150 3850 6300 3850
-Wire Wire Line
-	6300 4150 6150 4150
-Wire Wire Line
-	6150 4150 6150 4200
-Wire Wire Line
-	6300 3950 6000 3950
-Wire Wire Line
-	6300 4050 6050 4050
-Wire Wire Line
-	6050 4050 6050 4100
-Wire Wire Line
-	6050 4100 6000 4100
 $Comp
 L Earth #PWR010
 U 1 1 56EF20C2
@@ -538,4 +526,14 @@ F 3 "" H 2150 1850 50  0000 C CNN
 	1    2150 1850
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5850 3950 6300 3950
+Wire Wire Line
+	6150 4050 6300 4050
+Wire Wire Line
+	6150 4200 6250 4200
+Wire Wire Line
+	6250 4200 6250 4150
+Wire Wire Line
+	6250 4150 6300 4150
 $EndSCHEMATC
